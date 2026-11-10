@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const single = mode === 'single';
   const shim = (f: string) => fileURLToPath(new URL(`./src/shims/${f}`, import.meta.url));
   return {
-    base: './',
+    base: '/Luffy-Performance/',
     plugins: [react()],
     resolve: {
       alias: single
